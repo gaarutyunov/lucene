@@ -1,8 +1,9 @@
 {
   "name": "@gaarutyunov/lucene",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Lucene query parser and formatter for JavaScript created using PEG.js",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "lib"
   ],
