@@ -1,9 +1,9 @@
 {
   "name": "@gaarutyunov/lucene",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Lucene query parser and formatter for JavaScript created using PEG.js",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "lib"
   ],
@@ -12,7 +12,7 @@
     "test": "npm run build && mocha --exit && eslint lib test",
     "prepublish": "npm run build && npm test",
     "precommit": "npm test",
-    "browserify": "browserify lib/lucene.js --standalone Lucene > dist/index.js"
+    "browserify": "browserify lib/lucene.js --standalone Lucene > index.js"
   },
   "repository": {
     "type": "git",
