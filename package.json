@@ -1,5 +1,5 @@
 {
-  "name": "lucene",
+  "name": "@gaarutyunov/lucene",
   "version": "2.1.1",
   "description": "Lucene query parser and formatter for JavaScript created using PEG.js",
   "main": "lib/lucene.js",
@@ -10,7 +10,8 @@
     "build": "cat lib/lucene.grammar | pegjs > ./lib/queryParser.js",
     "test": "npm run build && mocha --exit && eslint lib test",
     "prepublish": "npm run build && npm test",
-    "precommit": "npm test"
+    "precommit": "npm test",
+    "browserify": "browserify lib/lucene.js --standalone Lucene > dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "browserify": "^16.5.1",
     "chai": "^3.5.0",
     "coveralls": "^3.0.5",
     "eslint": "^6.1.0",
